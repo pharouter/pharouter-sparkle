@@ -5,24 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My P5.js Project</title>
     <style>
-        body {
-            margin: 0; /* 移除預設邊距 */
-            overflow: hidden; /* 隱藏滾動條 */
-        }
+      body {
+    margin: 0; /* 移除預設邊距 */
+    overflow: hidden; /* 隱藏滾動條 */
+}
 
-        canvas {
-            display: block; /* 確保畫布為塊級元素 */
-        }
+canvas {
+    display: block; /* 確保畫布為塊級元素 */
+    width: 100vw; /* 設置寬度為視窗寬度 */
+    height: 100vh; /* 設置高度為視窗高度 */
+}
 
-        #myBackground {
-            border: none; /* 移除邊框 */
-            width: 100vw; /* 設置寬度為視窗寬度 */
-            height: 100vh; /* 設置高度為視窗高度 */
-            position: absolute; /* 絕對定位 */
-            left: 0;
-            top: 0;
-            z-index: -1; /* 放在最底層 */
-        }
     </style>
     </head>
 <body>
