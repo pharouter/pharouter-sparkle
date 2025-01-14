@@ -33,7 +33,7 @@ function windowResized() {
 }
 
 function draw() {
-	background(0);
+	background('#111111');
 	noStroke();
 	
 	// Trim end of trail.
