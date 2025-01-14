@@ -15,15 +15,21 @@ function preload() {
 }
 
 function setup() {
-	pixelDensity(1);
-	
- let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
-	
-	canvas.canvas.oncontextmenu = () => false;  // Removes right-click menu.
-	noCursor();
-	
-	shaderTexture = createGraphics(width, height, WEBGL);
-	shaderTexture.noStroke();
+    pixelDensity(1);
+    
+    // 設置畫布大小為全屏
+    let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+    
+    canvas.canvas.oncontextmenu = () => false;  // 移除右鍵菜單
+    noCursor();
+    
+    shaderTexture = createGraphics(width, height, WEBGL);
+    shaderTexture.noStroke();
+}
+
+function windowResized() {
+    // 當視窗大小改變時，調整畫布大小
+    resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
