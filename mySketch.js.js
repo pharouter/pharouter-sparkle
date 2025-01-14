@@ -34,6 +34,7 @@ function windowResized() {
 
 function draw() {
 	background(0);
+	scale(1, windowHeight / windowWidth); // 根據實際情況調整比例
 	noStroke();
 	
 	// Trim end of trail.
